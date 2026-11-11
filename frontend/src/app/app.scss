@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  min-height: 100dvh;
+  font-family: "Segoe UI", sans-serif;
+  color: #1c2430;
+  background: #f4f6f8;
+}
+
+.panel {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #d8dee6;
+  border-radius: 12px;
+}
+
+.origen {
+  margin: 0;
+  color: #5c6b7a;
+  font-size: 0.875rem;
+}
+
+h1 {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.mensaje {
+  margin: 0;
+  padding: 1rem;
+  background: #eef6f1;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.estado {
+  margin: 0;
+}
+
+.error {
+  color: #9b2335;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: #1f4e79;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}

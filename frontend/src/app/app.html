@@ -1,0 +1,15 @@
+<main class="panel">
+  <p class="origen">GET http://localhost:8080/api/saludo</p>
+  <h1>Saludo del backend</h1>
+
+  @if (cargando()) {
+    <p class="estado" role="status">Cargando saludo…</p>
+  } @else if (error()) {
+    <p class="estado error" role="alert">{{ error() }}</p>
+    <button type="button" (click)="cargar()">Reintentar</button>
+  } @else {
+    <p class="mensaje">{{ mensaje() }}</p>
+  }
+</main>
+
+<router-outlet />

@@ -1,0 +1,23 @@
+services:
+  web:
+    image: nginx:latest
+    container_name: contenedor-web-compose
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  db:
+    image: postgres:16
+    container_name: contenedor-db-compose
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-practicasiat}
+      POSTGRES_USER: ${POSTGRES_USER:-usuario_siat}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Define POSTGRES_PASSWORD en .env}
+    ports:
+      - "5433:5432"
+    volumes:
+      - volumen-db-compose:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  volumen-db-compose:

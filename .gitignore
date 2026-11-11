@@ -1,0 +1,16 @@
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+backend/config/
+
+# Compilación y dependencias
+**/node_modules/
+**/dist/
+**/.angular/
+**/target/
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
